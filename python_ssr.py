@@ -1,3 +1,5 @@
+# switching SSR via GPIO by python on Raspberry Pi
+#
 import RPi.GPIO as GPIO
 import datetime
 from time import sleep
