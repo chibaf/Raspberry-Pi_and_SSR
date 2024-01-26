@@ -11,9 +11,9 @@ def main():
     print(now)
     print(i)
     GPIO.output(14,GPIO.HIGH)
-    sleep(10)
+    sleep(1)
     GPIO.output(14,GPIO.LOW)
-    sleep(10)
+    sleep(1)
 try:
   main()
 except:
