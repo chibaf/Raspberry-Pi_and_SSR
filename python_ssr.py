@@ -4,7 +4,7 @@ import RPi.GPIO as GPIO
 import datetime
 from time import sleep
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(14,GPIO.OUT)
+GPIO.setup(14,GPIO.OUT)   # GPIO PIN No.14
 def main():
   for i in range(100):
     now = datetime.datetime.now()
@@ -16,6 +16,7 @@ def main():
     sleep(1)
 try:
   main()
-except:
-  pass
-GPIO.cleanup()
+except KeyboardInterrupt:
+  print("Keyboard Interrupt")
+  GPIO.cleanup()
+  exit()
